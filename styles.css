@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@300..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-h3{
+h3 {
     font-family: "Abril Fatface", serif;
 }
 
 p, span {
     font-family: "Tinos", serif;
 }
+
 .header {
     height: 4vh;
     background-color: #f0ecec;
@@ -30,7 +32,7 @@ p, span {
     gap: 20px;
 }
 
-.main-section {
+.workspace__main {
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -42,43 +44,43 @@ p, span {
     overflow-y: auto;
 }
 
-.post-cards {
+.blog-post__cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.post-card {
+.blog-post__card {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.post-header{
+.blog-post__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 40px;
 }
 
-.post-content {
+.blog-post__content {
     display: flex;
     align-items: flex-start;
-    justify-content:flex-start; 
+    justify-content: flex-start; 
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     gap: 20px;
 }
 
-.post-content-img {
+.blog-post__content-img {
     width: 400px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.main-footer {
+.workspace__footer {
     margin: 20px 0;
     height: 20%;
     border-radius: 8px;
@@ -94,12 +96,12 @@ p, span {
     overflow-y: auto;
 }
 
-.blogger-list {
+.sidebar__blogger-list {
     list-style: none;
     padding: 0;
 }
 
-.blogger-list li {
+.sidebar__blogger-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -109,7 +111,7 @@ p, span {
     background: #fff;
 }
 
-.blogger-list .avatar {
+.sidebar__avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -122,14 +124,15 @@ p, span {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+
 @media screen and (max-width: 1200px) {
     h3 {
         font-size: 20px;
     }
-    .header,.footer {
+    .header, .footer {
         display: none;
     }
-    .workspace{
+    .workspace {
         height: auto;
         margin: 0;
         padding: 10px;
@@ -138,16 +141,13 @@ p, span {
         box-shadow: none;
     }
 
-    .main-section {
+    .workspace__main {
         padding: 0;
         box-shadow: none;
     }
 
-    .blog-post{
+    .blog-post {
         background: none;
-    }
-
-    .blog-post{
         overflow: visible;
     }
 
@@ -156,18 +156,18 @@ p, span {
         overflow: visible;
     }
 
-    .blogger-list {
+    .sidebar__blogger-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    ul{
+    ul {
         padding: 0;
         margin: 0;
     }
 
-    .blogger-list li {
+    .sidebar__blogger-item {
         box-shadow: none;
         padding: 0;
         margin: 0;
@@ -175,7 +175,7 @@ p, span {
         background: none;
     }
 
-    .main-footer {
+    .workspace__footer {
         margin: 10px 0;
         height: 100px;
     }
@@ -185,22 +185,22 @@ p, span {
     }
 }
 
-@media screen and (max-width: 768px){
-    .post-header{
+@media screen and (max-width: 768px) {
+    .blog-post__header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .post-content {
+    .blog-post__content {
         flex-direction: column;
     }
 
-    .post-content-img {
+    .blog-post__content-img {
         width: 98%;
         margin: auto;
     }
 
-    .blogger-list li{
+    .sidebar__blogger-item {
         flex-direction: column;
         font-size: 14px;
     }
